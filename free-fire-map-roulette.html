@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080b12">
+<title>DropZone — Free Fire Map Roulette</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg aria-hidden="true" width="0" height="0" style="position:absolute"><filter id="clothDistress"><feTurbulence type="fractalNoise" baseFrequency=".035 .12" numOctaves="2" seed="17" result="fabric"/><feDisplacementMap in="SourceGraphic" in2="fabric" scale="2" xChannelSelector="R" yChannelSelector="G"/></filter></svg><div class="league-watermark" aria-hidden="true"><span>NEXUS XTREME</span><span>LEAGUE-2</span></div>
+<div class="shell" id="app">
+<div class="velocity-marquee" aria-label="Nexus Xtreme League marquee"><div class="marquee-track" id="marqueeTrack"><span>NEXUS XTREME LEAGUE <b>✦</b> NEXUS XTREME LEAGUE <b>✦</b> NEXUS XTREME LEAGUE <b>✦</b> </span><span aria-hidden="true">NEXUS XTREME LEAGUE <b>✦</b> NEXUS XTREME LEAGUE <b>✦</b> NEXUS XTREME LEAGUE <b>✦</b> </span></div></div>
+<header class="top"><div class="brand"><div class="brand-mark"><span>N</span></div>DROPZONE <span style="color:var(--accent)">/</span> NEXUS</div><div class="live"><i></i> READY FOR LIVE DRAW</div></header>
+<main class="main"><div class="eyebrow">FREE FIRE · MAP SELECTOR</div><h1>WHERE DO WE <span>DROP?</span></h1><p class="sub">Lock in the next battleground. Every active map gets a fair chance.</p>
+
+<section class="roulette" aria-label="Map roulette"><div class="viewport" id="viewport"><div class="belt" id="belt"></div></div></section>
+<div class="result" aria-live="polite" aria-atomic="true"><div><div class="result-label" id="resultLabel">READY WHEN YOU ARE</div><div class="result-name" id="resultName"></div></div></div>
+<section class="pool-panel" aria-label="Select maps for the draw"><div class="pool-title">MAP POOL <span>Choose the maps to include</span></div><div class="controls" id="mapControls" role="group" aria-label="Maps in the draw"></div></section><div class="actions"><button class="draw" id="draw">SPIN THE DRAW</button></div><div class="last-drop" id="lastDropInfo" aria-live="polite"><span>LAST DROP</span><strong id="lastDropName">—</strong></div><div id="status" class="status" role="status"></div></main></div>
+<div class="reveal" id="reveal" role="dialog" aria-modal="true" aria-labelledby="revealName" aria-hidden="true"><div class="reveal-card" id="revealCard"><img class="reveal-art" id="revealArt" alt=""><div class="reveal-kicker">SELECTED MAP</div><div class="reveal-name" id="revealName"></div><div class="reveal-foot"><span aria-hidden="true">✓</span> LOCKED IN</div></div></div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
