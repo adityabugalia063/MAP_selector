@@ -33,7 +33,7 @@
     {
       id: 'alpine',
       name: 'Alpine',
-      colors: ['#182f42', '#0c1724'],
+      colors: ['#231a36', '#0d0b14'],
       image: 'assets/alpine-fallback.svg',
       fallbackImage: null,
       badge: 'ZONE 04 · RADAR'

@@ -3,15 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#08090c">
+<meta name="theme-color" content="#060609">
 <meta name="description" content="MERAKI Tactical Free Fire Map Selector — Official competitive map draw and battleground randomizer.">
 <title>MERAKI — Free Fire Map Selector</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Ambient Atmospheric Watermark -->
+<!-- Ambient Atmospheric Watermark with Official MERAKI Emblem -->
 <div class="watermark" aria-hidden="true">
+  <img src="assets/meraki-emblem.webp" class="watermark-emblem" alt="">
   <span>MERAKI</span>
   <span>MAP SELECTOR</span>
 </div>
@@ -28,14 +30,7 @@
   <!-- Header Navigation -->
   <header class="top">
     <div class="brand">
-      <div class="brand-crest" aria-hidden="true">
-        <!-- MERAKI emblem: geometric crest with provision for external vector asset -->
-        <svg viewBox="0 0 28 28" width="22" height="22" fill="none">
-          <path d="M14 2L2 9L14 16L26 9L14 2Z" stroke="var(--gold)" stroke-width="2" stroke-linejoin="round"/>
-          <path d="M6 11.5V19.5L14 24L22 19.5V11.5" stroke="var(--gold-dark)" stroke-width="1.8" stroke-linejoin="round"/>
-          <path d="M10 14L14 19L18 14" stroke="var(--oxblood-bright)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </div>
+      <img src="assets/meraki-emblem.webp" class="brand-crest" alt="MERAKI Emblem">
       <span class="brand-title">MERAKI</span>
       <span class="brand-separator">/</span>
       <span class="brand-sub">MAP SELECTOR</span>
@@ -99,6 +94,10 @@
     <button type="button" class="reveal-close" id="revealClose" aria-label="Close result dialog">&times;</button>
     <img class="reveal-art" id="revealArt" alt="">
     <div class="reveal-content">
+      <div class="reveal-brand-badge">
+        <img src="assets/meraki-emblem.webp" alt="" class="reveal-brand-icon">
+        <span>MERAKI OFFICIAL DROP</span>
+      </div>
       <div class="reveal-kicker" id="revealKicker">SELECTED BATTLEGROUND</div>
       <div class="reveal-name" id="revealName"></div>
       <div class="reveal-foot"><span class="reveal-check" aria-hidden="true">✓</span> LOCKED IN</div>
